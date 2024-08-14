@@ -13,15 +13,6 @@ import java.util.List;
 
 @Component
 public class SistemaMensagem implements CommandLineRunner{
-    //Nome do remetente, configurável via application.properties.
-    //se não definido, o valor padrão será "NoReply-DIO".
-    @Value("${nome:NoReply-DIO}")
-    private String nome;
-    @Value("${email}")
-    private String email;
-    @Value("${telefones}")
-    private List<Long> telefones = new ArrayList<>(Arrays.asList(
-            new Long[]{11998736416L}));
 
     @Override
     public void run(String... args) throws Exception {
